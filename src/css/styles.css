@@ -15,6 +15,7 @@ body {
 .main {  
   box-shadow: 0 2px 4px #0000001a, 0 8px 16px #0000001a;
   background-color: #F0F2F5;
+  min-width: 937px;
 }
 main h3 {
   text-align: center;
@@ -75,38 +76,38 @@ label {
   text-indent: 10px;
 }
 .input-group {  
-    display: flex;
-    flex-wrap: nowrap;
+  display: flex;
+  flex-wrap: nowrap;
 }
 .invalidInput {
-border: 1px solid #dc3545;
+  border: 1px solid #dc3545;
   border-color: #dc3545;
 }
 .column {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 .cpf {
  max-width: 140px;
  width: 140px;
 }
 .cpfDiv {
-    min-width: 200px;
-    max-width: 220px;
+  min-width: 200px;
+  max-width: 220px;
 }
 .celularDiv{
-    min-width: 250px;
-    max-width: 250px;
+  min-width: 250px;
+  max-width: 250px;
 }
 .sexoDiv {
-    margin: auto;
+  margin: auto;
 }
 .skillDiv  {
-    margin: auto;
+  margin: auto;
 }
 #nascimento {
- max-width: 160px;
- width: 160px;
+  max-width: 160px;
+  width: 160px;
 }
 footer{
   margin-top: 40px;
