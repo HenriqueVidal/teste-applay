@@ -16,7 +16,8 @@
     <script defer src="src/js/solid.js"></script>
     <script defer src="src/js/fontawesome.js"></script>
 
-    <title>APPLAY - CANDIDATOS</title>
+    <link rel="shortcut icon" href="src/image/favicon.ico" type="image/x-icon" />
+    <title>Applay - Candidatos</title>
   </head>
   <body>
 
@@ -35,7 +36,7 @@
             </div>
   
             <div class="col-2">
-              <button type="button" class="btn btn-primary btn-new" onclick="abrirModal()">Novo Candidato</button>
+              <button type="button" class="btn btn-primary btn-new " onclick="abrirModal()">Novo candidato</button>
             </div>
           </div>
   
@@ -77,32 +78,48 @@
           <div class="modal-body">
             <div class="row mb-3">
               <input type="hidden" id="id"/>
-              <div class="col">
-                <label for="cpf">CPF:</label>
-                <input type="text" class="cpf form-control" id="cpf" maxlength="14" placeholder="CPF*"/>
+              <div class="col input-group mb-3 cpfDiv">
+                <span class="input-group-text" for="cpf">CPF:</span>
+                <input type="text" class="cpf form-control" id="cpf" maxlength="14" placeholder=""/>
               </div>
-              <div class="col">
-                <label for="nome">Nome completo:</label>
-                <input type="text" id="nome" class="form-control" placeholder="Nome*"/>
+              <div class="col input-group mb-3">
+                <span class="input-group-text" for="nome">Nome:</span>
+                <input type="text" id="nome" class="form-control" placeholder=""/>
               </div>
             </div>
             <div class="row mb-3">
-              <div class="col">
-                <label for="celular">Celular:</label>
-                <input name="celular" type="text" class="label celular form-control" id="celular" placeholder="Celular*"/>
+              <div class="col input-group mb-3 celularDiv">
+                <span class="input-group-text" for="celular">Celular:</span>
+                <input name="celular" type="text" class="label celular form-control" id="celular" placeholder=""/>
               </div>
-              <div class="col">
-                <label for="email">E-mail:</label>
-                <input type="text" class="form-control" id="email" placeholder="E-mail*"/> 
+              <div class="col input-group mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-sm" for="email">E-mail:</span>
+                <input type="text" class="form-control" id="email"/> 
               </div>
-              <div class="col">
-                <label for="nascimento">Data de Nascimento:</label>
-                <input type="date" class="form-control" id="nascimento" placeholder="Data de Nascimento*"/> 
-              </div>
-            </div>
+	    </div>
 
-            <div class="col checkDiv mt-4">
-              <div class="row mb-3">
+
+            <div class="col checkDiv">
+
+
+              <div class="column">
+              <div class="col input-group mb-3">
+                <span class="input-group-text" for="nascimento">Data de Nascimento:</span>
+                <input type="date" class="form-control" id="nascimento" placeholder=""/> 
+              </div>            
+                <div class="col sexoDiv">
+                  <div class="form-check">
+                    <h5>Sexo:</h5>
+                    <input class="form-check-input" type="radio" name="sexo" id="sexoMasculino" checked>
+                    <label class="form-check-label" for="sexoMasculino">Masculino</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="sexo" id="sexoFeminino">
+                    <label class="form-check-label" for="sexoFeminino">Feminino</label>
+                  </div>
+                </div>
+              </div>
+              <div class="row mb-3 skillDiv">
                 <div class="col">
                   <div class="form-check">
                     <h5>Habilidades:</h5>
@@ -120,19 +137,6 @@
                   <div class="form-check">
                     <input name="skills" class="form-check-input" type="checkbox" value="" id="skillBootStrap">
                     <label class="form-check-label" for="skillBootStrap">BOOTSTRAP</label>
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col">
-                  <div class="form-check">
-                    <h5>Sexo:</h5>
-                    <input class="form-check-input" type="radio" name="sexo" id="sexoMasculino" checked>
-                    <label class="form-check-label" for="sexoMasculino">Masculino</label>
-                  </div>
-                  <div class="form-check">
-                    <input class="form-check-input" type="radio" name="sexo" id="sexoFeminino">
-                    <label class="form-check-label" for="sexoFeminino">Feminino</label>
                   </div>
                 </div>
               </div>
