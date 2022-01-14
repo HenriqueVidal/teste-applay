@@ -4,19 +4,31 @@ redInputs = () => {
     let nome = document.getElementById("nome");
     let celular = document.getElementById("celular");
     let email = document.getElementById("email");
-    let nascimento = document.getElementById("nascimento");
+    let nascimento = document.getElementById("nascimento");        
+    let skillHtml = document.getElementById("skillHtml");
+    let skillCss = document.getElementById("skillCss");
+    let skillJs = document.getElementById("skillJs");
+    let skillBootStrap = document.getElementById("skillBootStrap");
     cpf.classList.add("invalidInput");
     nome.classList.add("invalidInput");
     nascimento.classList.add("invalidInput");
     celular.classList.add("invalidInput");
     email.classList.add("invalidInput");
+    skillHtml.classList.add("invalidInput");
+    skillCss.classList.add("invalidInput");
+    skillJs.classList.add("invalidInput");
+    skillBootStrap.classList.add("invalidInput");
   
     setTimeout(()=>{
       cpf.classList.remove("invalidInput");
       nome.classList.remove("invalidInput");
       nascimento.classList.remove("invalidInput");
       celular.classList.remove("invalidInput");
-      email.classList.remove("invalidInput");
+      email.classList.remove("invalidInput");      
+      skillHtml.classList.remove("invalidInput");
+      skillCss.classList.remove("invalidInput");
+      skillJs.classList.remove("invalidInput");
+      skillBootStrap.classList.remove("invalidInput");
     },4000);
   }
 cpfRed = () => {
