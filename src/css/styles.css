@@ -1,0 +1,82 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: #f8f9fa;
+}
+.imgDiv {
+  display: flex;
+  margin: 0px auto;
+}
+.imgDiv a {
+  margin: auto;
+}
+.main {  
+  box-shadow: 0 2px 4px #0000001a, 0 8px 16px #0000001a;
+  background-color: #F0F2F5;
+}
+main h3 {
+  text-align: center;
+}
+.card {  
+  background-color: #F0F2F5;
+}
+.main table {
+  margin-top: 32px;
+}
+.main table thead {
+  font-weight: bold;
+}
+.table .thead-dark th {
+  color: #fff;
+  background-color: #343a40;
+  border-color: #454d55;
+}
+.th-control {
+  font-size: 18px
+}
+.tr-control {
+  font-weight: 500;
+}
+.tr-control:nth-child(odd) {
+  background-color: #d7d9df8c;
+}
+.th-er {
+  text-align: center;
+}
+.btn-new {
+  margin: auto;
+  display: block;
+}
+.modal-title {
+  text-align: center;
+}
+input:hover {
+  border-color: #80bdff;
+}
+.checkDiv{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+label {
+  font-weight: 500;
+  text-indent: 10px;
+}
+.invalidInput {
+  border-color: red;
+}
+footer{
+  margin-top: 40px;
+}
+.footerDiv {
+  color: #212529;
+  background-color: lightgray;
+  line-height: 1.3rem;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+}
